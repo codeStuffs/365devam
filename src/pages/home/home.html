@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      365 Gunde Devri Kelam
+    </ion-title>
+
+    <!--<ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="arrow-up"></ion-icon>
+      </button>
+    </ion-buttons>-->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-scroll scrollX="true"  id="scrollX">
+    <ion-slides #slideDays  slidesPerView="{{noOfDaySlides}}">
+      <ion-slide *ngFor="let day of days" class="date-wrapper" id="day{{day.day}}" >
+        <ion-chip (click)="dayOnClick(day, $event)" [class.current-day]="day.day == currentDay" [class.current-chip]="day.day == currentChip">
+          <ion-label>
+            {{day.month}}
+            <br>
+            <strong class="chip-day">{{day.day}}</strong>
+          </ion-label>
+        </ion-chip>
+      </ion-slide>
+    </ion-slides>
+   <!-- <ion-row nowrap class="headerChip">
+      <div *ngFor="let day of days" class="date-wrapper" id="day{{day.day}}">
+        <ion-chip (click)="dayOnClick(day, $event)" [class.current-day]="day.day == currentDay" [class.current-chip]="day.day == currentChip">
+          <ion-label>
+            {{day.month}}
+            <br>
+            <strong>{{day.day}}</strong>
+          </ion-label>
+        </ion-chip>
+      </div>
+    </ion-row>-->
+  </ion-scroll>
+
+  <div class="page-content" *ngIf="_365_data">
+    <h5 class="day-topic">{{_365_data[0].topic}}</h5>
+    <ion-card>
+      <ion-card-header>
+       <ion-badge>{{_365_data[0].book}}</ion-badge>
+      </ion-card-header>
+      <ion-card-content [innerHtml]="_365_data[0].verses | verses">
+      </ion-card-content>
+    </ion-card>
+    <div class="explanation" [innerHtml]="_365_data[0].explanation">
+
+    </div>
+  </div>
+</ion-content>

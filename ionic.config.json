@@ -1,0 +1,8 @@
+{
+  "name": "365GundeDevriKelam",
+  "app_id": "e1bc8534",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
