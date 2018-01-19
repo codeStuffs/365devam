@@ -1,0 +1,13 @@
+page-settings {
+  ion-content {
+    .button-bar {
+      position: absolute !important;
+      bottom: 32px;
+      width: 90% !important;
+    }
+  }
+  .fab-ios, .fab-md {
+      color: #fff;
+      background: linear-gradient(to right, #56CCF2, #2F80ED);
+  }
+}

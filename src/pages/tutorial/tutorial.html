@@ -1,0 +1,95 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" class="skip-button">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <!--<img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>-->
+      <h2 class="slide-title">
+        <b>365 Günde Devri Kelam</b>
+      </h2>
+      <h2 class="slide-title-dot">.........</h2>
+      <p>
+        Rab’bin Sözü bir Mesih imanlısı için hayatının olmazsa olmazlarından biridir. İnancımızın yegâne yetki kaynağı
+        olarak onu anlamak için elimizden geleni yapmalıyız. Kelam’ı sadece incelemeye değil onu içselleştirmeye ve
+        hayatımıza uygulamaya gayret etmeliyiz. Hamdolsun ki bu konuda yalnız bırakılmış değiliz, Rab’bin Sözünü
+        insanlara esin yoluyla aktaran Kutsal Ruh’un kendisi bizimle birlikte, hatta İsa Mesih’e iman eden herkesin
+        içindedir. Böylece Tanrı’nın Kutsal Kelamını kavramak için gerekli olan her şeye sahibiz.
+      </p>
+      <img src="assets/imgs/dov.png" class="slide-image"/>
+
+    </ion-slide>
+    <ion-slide>
+      <!--<img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>-->
+      <h2 class="slide-title-dot">.........</h2>
+      <p>
+        Musa, sağ kolu olan Yeşu’ya, şöyle söyledi: ‘Yasa Kitabında yazılanları dilinden düşürme. Tümünü özenle yerine getirmek için gece
+        gündüz onu düşün. O zaman başarılı olacak ve amacına ulaşacaksın (Yeşu 1:8).’ Elçi Pavlus benzer şekilde, her
+        iyi iş için donatılmış yetkin birer imanlı olmamız için Tanrı esini olan Kelam’ı ciddiye almamız gerektiğini
+        belirtir (2.Timoteos 3:16-17).
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <!--<img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>-->
+      <h2 class="slide-title">Amaç</h2>
+      <h2 class="slide-title-dot">.........</h2>
+
+      <p>
+        Elinizdeki bu çalışmanın amacı da bu yöndedir. Güçlü birer Mesih imanlısı olma yolunda Rab’bin Sözünü her gün
+        okumamız gerekir. Bazen anlayamadığımız kısımlar olabilir, o yüzden ayetlerin yanı sıra kısa açıklamalar da var.
+        Yıl boyunda düzenli olarak bunları okuyabilsek imanda her geçen gün daha güçlenip gelişeceğimiz kesindir. Burada
+        Kutsal Kitap’ın bütün bölümleri ele alamıyoruz, fakat önemli bazı kısımları koyduk. Aynı zamanda dikkat
+        ederseniz sadece Yeni Antlaşma (İncil) kısmından değil Eski Antlaşma’dan (Tevrat ve Zebur) da bir çok bölüm
+        dahil ettik.
+      </p>
+    </ion-slide>
+  <ion-slide>
+      <!--<img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>-->
+
+      <h2 class="slide-title-dot">.........</h2>
+      <p>
+       Nedeni şu: Çoğu imanlı İncil’i çok iyi biliyor fakat Eski Antlaşma’ya gelince bayağı yabancılık
+        çekiyor. Oysa ki Eski’yi anlamadan Yeni’i tam anlamak mümkün değil. Bunu sinemada bir filmin devresine denk
+        gelip sadece ikinci bölümünü izlemeye benzetebiliriz. Elbette ki filmin son kısmı her zaman daha etkileyici ve
+        heyecanlı fakat ilk bölümü izlemeden hepsini tam olarak kavramamız mümkün değil. Benzer şekilde Kutsal Kitap’ın
+        son kısmı olan İncil’i ne kadar seviyorsak da Eski Antlaşma’yı da ihmal etmemeliyiz.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+
+      <h2 class="slide-title-dot last">.........</h2>
+      <p>Gençler bazen bana soruyorlar, ‘Can bey, ben sizin gibi nasıl güçlü bir imanlı olabilirim?’ Onlara hep şunu
+        söylüyorum, ‘Benim gücümün sırrı, Kelam’ı her gün okuyup, üzerinde derin derin düşünerek dua etmektir. Gerisi
+        Kutsal Ruh’un işidir.’ Çünkü şunu biliyoruz ki bizde kayda değer bir hikmet yoktur. Bilgelik Rab’be özgüdür.
+        Ancak Onun’la düzenli bir şekilde baş başa kalırsak o zaman güçlenip bereket kaynağı olabiliyoruz. Duam şu ki
+        her gün bu ayetleri ve açıklamalarını okuyarak imanda daha da pekişip Rab’be yaraşır bir hayatınız ve hizmetiniz
+        olsun</p>
+
+    </ion-slide>
+
+    <ion-slide>
+      <!--<img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>-->
+      <h2 class="slide-title">Can Nuroğlu kimdir ?</h2>
+      <h2 class="slide-title-dot last">.........</h2>
+      <p>
+
+        Evli ve üç çocuk babasıdır. Amerika'da Emmaus İncil Üniversitesinden mezun olduktan sonra on bir yıl Diyarbakır
+        Kilisesinde hizmet etti. Şimdilik Kuzey Kıbrıs'ta bulunup Mesih'in hizmetine devam etmektedir.
+      </p>
+
+      <button class="start-app-btn" ion-button icon-end large clear (click)="startApp()">
+        Başlamak
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
