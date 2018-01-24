@@ -17,7 +17,7 @@ _Note: You may need to add “sudo” in front of any global commands to install
 * iOS - Run `ionic cordova run ios --prod`
 * iOS - Run `ionic cordova build ios --prod --release`
 
-_Note: check out [ionic deploy docs](https://ionicframework.com/docs/intro/deploying/) for more info
+_Note: check out [ionic deploy docs](https://ionicframework.com/docs/intro/deploying/) for more info._
 
 ### Support or Contact
 
