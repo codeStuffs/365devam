@@ -89,4 +89,5 @@
     <plugin name="cordova-plugin-badge" spec="^0.8.5" />
     <plugin name="de.appplant.cordova.plugin.local-notification" spec="^0.8.5" />
     <plugin name="cordova-plugin-nativestorage" spec="^2.2.2" />
+    <engine name="ios" spec="~4.5.4" />
 </widget>

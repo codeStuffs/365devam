@@ -32,6 +32,7 @@
     "@ionic/storage": "^2.1.3",
     "angular-froala-wysiwyg": "^2.7.2",
     "cordova-android": "6.3.0",
+    "cordova-ios": "4.5.4",
     "cordova-plugin-app-event": "^1.2.1",
     "cordova-plugin-background-mode": "^0.7.2",
     "cordova-plugin-badge": "^0.8.5",
@@ -73,7 +74,8 @@
       "cordova-plugin-nativestorage": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }
