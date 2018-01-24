@@ -2,33 +2,19 @@
 
 Repository for 365 
 
-### Markdown
+## Getting Started
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* [Download the installer](https://nodejs.org/) for Node.js 6 or greater.
+* Install the ionic CLI globally: `npm install -g ionic`
+* Clone this repository: `git clone https://github.com/ionic-team/ionic-conference-app.git`.
+* Run `npm install` from the project root.
+* Run `ionic serve` in a terminal from the project root.
+* Profit. :tada:
 
-```markdown
-Syntax highlighted code block
+_Note: You may need to add “sudo” in front of any global commands to install the utilities._
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/codeStuffs/365devam/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Deploying
+* iOS - Run `ionic cordova run ios --prod`
 
 ### Support or Contact
 
